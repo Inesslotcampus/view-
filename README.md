@@ -26,3 +26,46 @@ blablabla
 @endsection
 
 
+## Loop
+
+@foreach(blablabla)
+
+contenu 
+
+@endforeach
+
+(ex)
+
+ @foreach ($products as $product)
+        <div class="product">
+        <a href='{{ $product->id }}'>
+
+            <div class="image">
+                <img src="{{ $product->image }}">
+            </div>
+            <div class="namePrice">
+                <h2>{{ $product->name }}</h2>
+                <p>{{ $product->price }} €</p>
+
+            </div>
+            </a>
+        </div>
+
+    @endforeach
+    
+    ## Affiher élement d'un tableau
+    
+    (ex) <h2>{{ $product[0]->name }}</h2>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
