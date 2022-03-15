@@ -57,7 +57,9 @@ contenu
     
     (ex) <h2>{{ $product[0]->name }}</h2>
     
+    ## Mettre route dans une view :/ex
     
+    <td><a href="{{ url('product/'.$product->id) }}"><button type="button" class="btn btn-success">View</button></a></td>
 
 
 
